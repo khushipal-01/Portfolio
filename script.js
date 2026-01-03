@@ -95,5 +95,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.section').forEach(section => {
   observer.observe(section);
 });
+live: "https://khushipal-01.github.io/portfolio/"
+
+
 
 
