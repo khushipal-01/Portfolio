@@ -25,7 +25,7 @@ function erase() {
 
 type();
 
-// PROJECTS (✅ PERSONAL FINANCE DASHBOARD ADDED + LIVE LINKS)
+// PROJECTS (✅ PERSONAL FINANCE DASHBOARD ADDED)
 const projects = [
   {
     title: "Personal Finance Dashboard",
@@ -38,18 +38,17 @@ const projects = [
     title: "Suspicious Link Scanner",
     desc: "A cybersecurity tool to detect malicious links.",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80",
-    live: "#", 
+    live: "#",
     github: "#"
   },
   {
-    title: "Portfolio Website",
+  title: "Portfolio Website",
     desc: "Modern animated portfolio built with HTML, CSS, JS.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80",
     live: "https://khushipal-01.github.io/portfolio/",
     github: "https://github.com/khushipal-01/portfolio"
   }
 ];
-
 
 const projectList = document.getElementById("project-list");
 
@@ -96,7 +95,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.section').forEach(section => {
   observer.observe(section);
 });
-live: "https://khushipal-01.github.io/portfolio/"
+
+
 
 
 
