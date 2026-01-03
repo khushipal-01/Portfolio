@@ -28,7 +28,7 @@ This portfolio highlights my skills, projects, resume, and contact details with 
 
 ---
 ## 🌍 Live Portfolio
-https://khushipal-01.github.io/portfolio
+https://khushipal-01.github.io/Portfolio/
 
 
 
