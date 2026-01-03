@@ -15,7 +15,7 @@ body {
   background: #f8f9fa;
 }
 
-/* ---------------- NAVBAR ---------------- */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,23 +50,22 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
 .nav-links a:hover {
   color: #007bff;
 }
 
-/* ---------------- HERO ---------------- */
+/* HERO */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
   padding: 120px 5% 40px;
-  background: linear-gradient(135deg, #5d6482 0%, #7d6892 100%),
+  background: linear-gradient(135deg, #5d6482, #7d6892),
     url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1920&q=80')
-      no-repeat center/cover;
+      center/cover no-repeat;
   color: white;
   position: relative;
   gap: 2rem;
@@ -82,7 +81,7 @@ body {
 .hero-content,
 .hero-image {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -94,11 +93,6 @@ body {
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.social-links {
   margin: 1rem 0;
 }
 
@@ -106,11 +100,6 @@ body {
   margin-right: 1rem;
   color: white;
   font-size: 1.6rem;
-  transition: transform 0.3s;
-}
-
-.social-links a:hover {
-  transform: scale(1.15);
 }
 
 .btn {
@@ -120,12 +109,6 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background: #0056b3;
-  transform: translateY(-2px);
 }
 
 .hero-image img {
@@ -134,14 +117,9 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #00d4aa;
-  transition: transform 0.4s;
 }
 
-.hero-image img:hover {
-  transform: rotateY(12deg) rotateX(6deg) scale(1.05);
-}
-
-/* ---------------- SECTIONS ---------------- */
+/* SECTIONS */
 .section {
   padding: 5rem 5%;
   background: white;
@@ -152,14 +130,7 @@ body {
   margin: auto;
 }
 
-.section h2 {
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #131517;
-}
-
-/* ---------------- SKILLS ---------------- */
+/* SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -167,25 +138,13 @@ body {
 }
 
 .skill-card {
-  text-align: center;
   padding: 2rem;
+  text-align: center;
   background: #f8f9fa;
   border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.skill-card i {
-  font-size: 3rem;
-  color: #394047;
-  margin-bottom: 1rem;
-}
-
-/* ---------------- PROJECTS ---------------- */
+/* PROJECTS */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -196,12 +155,6 @@ body {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
 }
 
 .project-card img {
@@ -210,23 +163,7 @@ body {
   object-fit: cover;
 }
 
-.project-card .content {
-  padding: 1.5rem;
-}
-
-.project-card h3 {
-  color: #3a4148;
-  margin-bottom: 0.5rem;
-}
-
-.project-links a {
-  margin-right: 1rem;
-  color: #007bff;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-/* ---------------- CONTACT ---------------- */
+/* CONTACT */
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -235,67 +172,24 @@ body {
   margin: auto;
 }
 
-input,
-textarea {
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* ---------------- FOOTER ---------------- */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
   color: white;
-  background: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80')
-    center/cover;
+  background: #333;
 }
 
-/* ---------------- GLOBAL FIXES ---------------- */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a,
-button {
-  min-height: 44px;
-  min-width: 44px;
-}
-
-/* ---------------- MOBILE RESPONSIVE ---------------- */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
   .hero-image img {
     width: 240px;
     height: 240px;
   }
-
-  .skills-grid,
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
-@media (max-width: 600px) {
-  .nav-links {
-    display: none;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-}
