@@ -38,7 +38,7 @@ const projects = [
     title: "Suspicious Link Scanner",
     desc: "A cybersecurity tool to detect malicious links.",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80",
-    live: "#",
+    live: "https://khushipal-01.github.io/Portfolio/",
     github: "#"
   },
   {
@@ -95,4 +95,5 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.section').forEach(section => {
   observer.observe(section);
 });
+
 
