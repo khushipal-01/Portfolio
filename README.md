@@ -27,4 +27,7 @@ This portfolio highlights my skills, projects, resume, and contact details with 
 - Responsive Web Design  
 
 ---
+## 🌍 Live Portfolio
+https://khushipal-01.github.io/portfolio/
+
 
