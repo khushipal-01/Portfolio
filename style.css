@@ -135,10 +135,18 @@ body {
   object-fit: cover;
   border: 5px solid #00d4aa;
   transition: transform 0.4s;
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 0; /* optional, zarurat ho to adjust karo */
+
 }
 
 .hero-image img:hover {
   transform: rotateY(12deg) rotateX(6deg) scale(1.05);
+  margin: 0 auto;
+display: block;
+
 }
 
 /* ---------------- SECTIONS ---------------- */
@@ -299,6 +307,7 @@ button {
     text-align: center;
   }
 }
+
 
 
 
